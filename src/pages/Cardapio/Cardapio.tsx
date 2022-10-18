@@ -1,5 +1,4 @@
 import styles from './Cardapio.module.scss';
-import { ReactComponent as LogoAluroni } from 'assets/logoAluroni.svg';
 import Buscador from './Buscador/Buscador';
 import { useState } from 'react';
 import Filtros from './Filtros/Filtros';
@@ -12,10 +11,7 @@ export default function Cardapio() {
   const [filtro, setFiltro] = useState<number | null>(null);
   const [ordenador, setOrdenador] = useState('');
   return (
-    <main>
-      <nav className={styles.menu}>
-        <LogoAluroni />
-      </nav>
+    <main>      
       <header className={styles.header}>
         <div className={styles.header__text}>
           Casa da Massa
